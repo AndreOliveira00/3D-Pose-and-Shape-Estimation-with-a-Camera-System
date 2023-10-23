@@ -2,10 +2,10 @@
 A release version of the developed code as well as the installation process and some qualitative results will be made public soon...
 
 <p align="center">
-  <img src="/results/downtown_sitOnStairs_render.gif" data-canonical-src="/results/downtown_sitOnStairs_render.gif" width="425" />
-  <img src="/results/Havoc_Ladies_render.gif" data-canonical-src="/results/Havoc_Ladies_render.gif" width="425" />
-  <img src="/results/downtown_sitOnStairs_world.gif" data-canonical-src="/results/downtown_sitOnStairs_world.gif" width="425" />
-  <img src="/results/Havoc_Ladies_world.gif" data-canonical-src="/results/Havoc_Ladies_world.gif" width="425" />
+  <img src="/results/downtown_sitOnStairs_render.gif" data-canonical-src="/results/downtown_sitOnStairs_render.gif" width="400" />
+  <img src="/results/Havoc_Ladies_render.gif" data-canonical-src="/results/Havoc_Ladies_render.gif" width="400" />
+  <img src="/results/downtown_sitOnStairs_world.gif" data-canonical-src="/results/downtown_sitOnStairs_world.gif" width="400" />
+  <img src="/results/Havoc_Ladies_world.gif" data-canonical-src="/results/Havoc_Ladies_world.gif" width="400" />
 </p>
 
 This repository contains the official PyTorch implementation of my master's thesis.
