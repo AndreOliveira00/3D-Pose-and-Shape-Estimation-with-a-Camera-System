@@ -18,10 +18,10 @@ scipy
 sklearn
 chumpy
 pytorch-lightning==1.3.5
-pyvista==0.31.3
+pyvista==0.40.dev0
 pyrender
 seaborn
-protobuf~=3.19.0
+protobuf~=3.19.6
 progress
 imutils
 pytube
