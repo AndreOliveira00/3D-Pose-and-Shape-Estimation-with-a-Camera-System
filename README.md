@@ -56,7 +56,7 @@ I will guide you through installing the project, however, it is recommended to r
     This will fetch the submodules [HybrIK](https://github.com/Jeff-sjtu/HybrIK) and [Yolo tracking](https://github.com/mikel-brostrom/yolo_tracking).
     Before proceeding, please note that there are 3 anaconda environments configured and operational to import into `envs`, e.g., main_HybrIKX_env_name_hybrikx2.yaml means that it will be used in the HybrIK submodule and must have the name hybrikx2 (otherwise it must be changed in the code in [#L130](https://github.com/AndreOliveira00/3D-Pose-and-Shape-Estimation-with-a-Camera-System/blob/f582d18eff2f654365b64484167176030fa95785/pose_est/run_pose_est_demo.py#L130) 
 2. Follow HybrIK's installation [instructions](https://github.com/Jeff-sjtu/HybrIK#installation-instructions) and download its [models](https://github.com/Jeff-sjtu/HybrIK#download-models).
-3. Install [PyTorch 1.9.0](https://pytorch.org/get-started/previous-versions/) with the correct CUDA version.
+3. Install [PyTorch 1.9.1](https://pytorch.org/get-started/previous-versions/) with the correct CUDA version.
 4. Install system dependencies (Linux only, I know it might be confusing, but the main environment for GLAMR is called "**hybrik**"):
     ```
     source install.sh
@@ -170,10 +170,10 @@ The development was based on the following articles:
     }
     
     @inproceedings{yuan2022glamr,
-    title={GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras},
-    author={Yuan, Ye and Iqbal, Umar and Molchanov, Pavlo and Kitani, Kris and Kautz, Jan},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2022}
+        title={GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras},
+        author={Yuan, Ye and Iqbal, Umar and Molchanov, Pavlo and Kitani, Kris and Kautz, Jan},
+        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        year={2022}
     }
 
 
