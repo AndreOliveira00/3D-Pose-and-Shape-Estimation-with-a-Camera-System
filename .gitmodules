@@ -1,4 +1,4 @@
-[submodule "src/yolo_tracking"]
+[submodule "yolo_tracking"]
 	path = src/yolo_tracking
 	url = https://github.com/mikel-brostrom/yolo_tracking.git
 [submodule "HybrIK_X"]
