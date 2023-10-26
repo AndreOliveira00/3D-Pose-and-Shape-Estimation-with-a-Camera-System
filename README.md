@@ -35,6 +35,8 @@ In addition, the body motion, locally defined, is filled according to an iterati
     - [Multi-Person Videos](#multi-person-videos)
 - [Datasets](#datasets)
 - [Extra Info](#extra-info)
+    - [Typical Errors](#typical-errors)
+    - [Complementary Code](#complementary-code)
 - [Citation](#citation)
 
 # Installation instructions
@@ -150,9 +152,23 @@ ${GLAMR_ROOT}
 ```
 
 # Extra Info
+### Typical errors
 1. If there is an error with the PyTorch3D library (HybrIK env), it is recommended to build from source (follow [tutorial](https://github.com/facebookresearch/pytorch3d/blob/main/docs/tutorials/deform_source_mesh_to_target_mesh.ipynb) -> **0. Install and Import modules**)
 2. [PyVista Error](https://github.com/NVlabs/GLAMR/issues/10). Test [PyVista](https://tutorial.pyvista.org/) (GLAMRenv) before starting. Follow [pyvista's example](https://docs.pyvista.org/examples/02-plot/gif.html?highlight=off_screen).
-3. 
+
+### Complementary code
+Code in the `preprocess` directory refers to a preprocessing execution:
+1. `image_dir_cut_as_dynamic_cam.py` to create the Dynamic [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/) dataset. Define source_directory, define (x,y) start, define width and height of the square (width must be divisible by 2), define jump (width / jump must be inside otherwise images will have different resolutions) and destination_directory.
+2. `images2video.py` for converting images to videos using the ffmpeg tool.
+
+Code in the `posprocess` directory refers to a preprocessing execution:
+1. `posprocess.py` (processing carried out in `utils.py`) to analyze the **pose.pkl** dictionary generated in HybrIK (multi and single person), divided in (performed individually):
+    - plot_2D_heatmaps function to draw 2D Gaussian Heatmaps.
+    - plot_3D_skeleton function to draw 3D skeleton (single and multi person).
+    - plot_multi_heatmaps function to draw 2D heatmaps of multi-person.
+3. `posproc_joint_angle` plot of the angular variation of the joints over the frames with linear interpolation in hybrik when predictions fail -> define root_dir, glamr_dict_file, human_id, joint_index (according to the enumeration of the joints of the human skeleton for 24 joints).
+4. `rename_with_missing_frames` rearrange and rename images if one element or more elements fail.
+5. `posp_MOT/demo_MOT.py` (processing carried out in `posprocess_human_track.py`) for processing the information obtained in the MOT and proper formatting in the **mpt.pkl** dictionary.
 
 ## Citation
 If you found this work helpful in your research, please cite this repository.
