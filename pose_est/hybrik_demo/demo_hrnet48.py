@@ -100,11 +100,11 @@ parser.add_argument('--multi',
                     type=int)
 parser.add_argument('--img_folder',
                     help='images path ',
-                    default='/home/andre/Documents/Projects/GLAMR/out/glamr_static/workout_5s/pose_est/frames',
+                    default='out/glamr_static/workout_5s/pose_est/frames',
                     type=str)
 parser.add_argument('--out_dir',
                     help='output folder',
-                    default='/home/andre/Documents/Projects/GLAMR/out/glamr_static/workout_5s/pose_est',
+                    default='out/glamr_static/workout_5s/pose_est',
                     type=str)
 parser.add_argument('--MPT_method',
                     help='strongsort, deepocsort, ocsort, bytetrack, botsort or sort (original)',

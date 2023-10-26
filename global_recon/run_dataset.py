@@ -16,7 +16,7 @@ from global_recon.models import model_dict
 from global_recon.vis.vis_grecon import GReconVisualizer
 from pose_est.run_pose_est_demo import run_pose_est_on_video
 
-# GT em /home/andre/Documents/Projects/GLAMR/datasets/3DPW/processed_v1/pose
+# GT em datasets/3DPW/processed_v1/pose
 # Done: downtown_walkUphill_00, downtown_crossStreets_00
 # Talvez: downtown_downstairs_00 (857), downtown_car_00 (1020), downtown_runForBus_00 (731 -> oclusões)
 # downtown_arguing_00 (898 -> fácil), downtown_rampAndStairs_00 (984 -> variação de altura)
