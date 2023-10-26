@@ -56,7 +56,10 @@ I will guide you through installing the project, however, it is recommended to r
     This will fetch the submodules [HybrIK](https://github.com/Jeff-sjtu/HybrIK) and [Yolo tracking](https://github.com/mikel-brostrom/yolo_tracking).
     Before proceeding, please note that there are 3 anaconda environments configured and operational to import into `envs`, e.g., main_HybrIKX_env_name_hybrikx2.yaml means that it will be used in the HybrIK submodule and must have the name hybrikx2 (otherwise it must be changed in the code in [#L130](https://github.com/AndreOliveira00/3D-Pose-and-Shape-Estimation-with-a-Camera-System/blob/f582d18eff2f654365b64484167176030fa95785/pose_est/run_pose_est_demo.py#L130) 
 2. Follow HybrIK's installation [instructions](https://github.com/Jeff-sjtu/HybrIK#installation-instructions) and download its [models](https://github.com/Jeff-sjtu/HybrIK#download-models).
-3. Install [PyTorch 1.9.1](https://pytorch.org/get-started/previous-versions/) with the correct CUDA version.
+3. Install [PyTorch 1.9.1](https://pytorch.org/get-started/previous-versions/) with the correct CUDA version, e.g., for NVIDIA Geforce GTX 1650 run:
+    ```
+    conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+    ```
 4. Install system dependencies (Linux only, I know it might be confusing, but the main environment for GLAMR is called "**hybrik**"):
     ```
     source install.sh
@@ -147,7 +150,9 @@ ${GLAMR_ROOT}
 ```
 
 # Extra Info
-Some additional information will be added in the near future ...
+1. If there is an error with the PyTorch3D library (HybrIK env), it is recommended to build from source (follow [tutorial](https://github.com/facebookresearch/pytorch3d/blob/main/docs/tutorials/deform_source_mesh_to_target_mesh.ipynb) -> **0. Install and Import modules**)
+2. [PyVista Error](https://github.com/NVlabs/GLAMR/issues/10). Test [PyVista](https://tutorial.pyvista.org/) (GLAMRenv) before starting. Follow [pyvista's example](https://docs.pyvista.org/examples/02-plot/gif.html?highlight=off_screen).
+3. 
 
 ## Citation
 If you found this work helpful in your research, please cite this repository.
