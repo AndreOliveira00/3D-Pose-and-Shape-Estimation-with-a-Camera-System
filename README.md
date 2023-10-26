@@ -9,7 +9,7 @@
 
 This repository contains the official PyTorch implementation of my master's thesis.
 
-# Overview
+# Overview :star2:
 
 In this work, a solution is addressed that try to estimate the 3D joint position of several people in in-the-wild scenes, as well as their body shape and global trajectory from a single RGB video, recorded with a static or dynamic camera.
 In contrast to complex multi-view systems, this solution prioritizes simplicity and adaptability in different applications. Faced with the challenging scenario, a system was developed based on different frameworks, individually optimized for their purpose. As such, the author sought to extend the process carried out in a conventional pose and shape estimator, robustly implementing the tracking capability of humans and an inference based on temporal coherence, capable of dealing with complete occlusions over long time intervals.
@@ -24,8 +24,8 @@ In addition, the body motion, locally defined, is filled according to an iterati
 
 
 
-# Table of Content
-- [Installation](#installation-instructions)
+# Table of Content :sparkles:
+- [Installation Instructions](#installation-instructions)
     - [Environment](#environment)
     - [Dependencies](#dependencies)
     - [Pretrained Models](#pretrained-models) 
@@ -40,7 +40,7 @@ In addition, the body motion, locally defined, is filled according to an iterati
 - [Citation](#citation)
 - [License](#license)
 
-# Installation instructions
+# Installation Instructions :rocket:
 I will guide you through installing the project, however, it is recommended to read the [GLAMR](https://nvlabs.github.io/GLAMR) and [Yolo tracking](https://github.com/mikel-brostrom/yolo_tracking) installation guide.
 
 ### Environment
@@ -50,7 +50,7 @@ I will guide you through installing the project, however, it is recommended to r
 * [HybrIK](https://github.com/Jeff-sjtu/HybrIK) (used in demo)
 
 
-### Dependencies
+### Dependencies :zap:
 0. The dependencies installation pipeline allows synchronization with all submodules used. It is recommended to read the installation section for each of the dependencies ([Yolo tracking](https://github.com/mikel-brostrom/yolo_tracking), [HybrIK](https://github.com/Jeff-sjtu/HybrIK) and [GLAMR](https://github.com/NVlabs/GLAMR/tree/main#demo)).
 1. Clone this repository recursively:
     ```
@@ -81,7 +81,7 @@ I will guide you through installing the project, however, it is recommended to r
   ```
   Note that the pretrained models directly correspond to the config files for the [motion infiller](motion_infiller/cfg) and [trajectory predictor](traj_pred/cfg).
 
-# Demo
+# Demo :fire:
 
 This section is identical to the content presented in the original project ([GLAMR](https://github.com/NVlabs/GLAMR/tree/main#demo)), however here are some guidelines for implementation.
 
@@ -152,12 +152,12 @@ ${GLAMR_ROOT}
 |   |-- H36M
 ```
 
-# Extra Info
-### Typical errors
+# Extra Info 
+### Typical errors :four_leaf_clover:
 1. If there is an error with the PyTorch3D library (HybrIK env), it is recommended to build from source (follow [tutorial](https://github.com/facebookresearch/pytorch3d/blob/main/docs/tutorials/deform_source_mesh_to_target_mesh.ipynb) -> **0. Install and Import modules**)
 2. [PyVista Error](https://github.com/NVlabs/GLAMR/issues/10). Test [PyVista](https://tutorial.pyvista.org/) (GLAMRenv) before starting. Follow [pyvista's example](https://docs.pyvista.org/examples/02-plot/gif.html?highlight=off_screen).
 
-### Complementary code
+### Complementary code :metal:
 Code in the `preprocess` directory refers to a preprocessing execution:
 1. `image_dir_cut_as_dynamic_cam.py` to create the Dynamic [3DPW](https://virtualhumans.mpi-inf.mpg.de/3DPW/) dataset. Define source_directory, define (x,y) start, define width and height of the square (width must be divisible by 2), define jump (width / jump must be inside otherwise images will have different resolutions) and destination_directory.
 2. `images2video.py` for converting images to videos using the ffmpeg tool.
@@ -171,7 +171,7 @@ Code in the `posprocess` directory refers to a preprocessing execution:
 4. `rename_with_missing_frames` rearrange and rename images if one element or more elements fail.
 5. `posp_MOT/demo_MOT.py` (processing carried out in `posprocess_human_track.py`) for processing the information obtained in the MOT and proper formatting in the **mpt.pkl** dictionary.
 
-# Citation
+# Citation :exclamation:
 If you found this work helpful in your research, please cite this repository.
 
 If you find our work useful in your research, please cite my work:
@@ -208,7 +208,7 @@ The development was based on the following articles:
 ```
 
 
-# License
+# License 
 Please see the [license](LICENSE) for further details.
 
 
