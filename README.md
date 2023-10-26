@@ -38,6 +38,7 @@ In addition, the body motion, locally defined, is filled according to an iterati
     - [Typical Errors](#typical-errors)
     - [Complementary Code](#complementary-code)
 - [Citation](#citation)
+- [License](#license)
 
 # Installation instructions
 I will guide you through installing the project, however, it is recommended to read the [GLAMR](https://nvlabs.github.io/GLAMR) and [Yolo tracking](https://github.com/mikel-brostrom/yolo_tracking) installation guide.
@@ -170,33 +171,44 @@ Code in the `posprocess` directory refers to a preprocessing execution:
 4. `rename_with_missing_frames` rearrange and rename images if one element or more elements fail.
 5. `posp_MOT/demo_MOT.py` (processing carried out in `posprocess_human_track.py`) for processing the information obtained in the MOT and proper formatting in the **mpt.pkl** dictionary.
 
-## Citation
+# Citation
 If you found this work helpful in your research, please cite this repository.
 
+If you find our work useful in your research, please cite my work:
+```bibtex
+@article{amoli2023hps,
+    title = {{3D Pose and Shape Estimation from a Camera System}},
+    author = {{A. Oliveira}},
+    year = {2023}
+    }
+```
+
 The development was based on the following articles:
+```bibtex
+@inproceedings{li2021hybrik,
+    title={Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation},
+    author={Li, Jiefeng and Xu, Chao and Chen, Zhicun and Bian, Siyuan and Yang, Lixin and Lu, Cewu},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    year={2021}
+}
 
-    @inproceedings{li2021hybrik,
-        title={Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation},
-        author={Li, Jiefeng and Xu, Chao and Chen, Zhicun and Bian, Siyuan and Yang, Lixin and Lu, Cewu},
-        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-        pages={3383--3393},
-        year={2021}
-    }
+@article{li2023hybrik,
+    title={HybrIK-X: Hybrid Analytical-Neural Inverse Kinematics for Whole-body Mesh Recovery},
+    author={Li, Jiefeng and Bian, Siyuan and Xu, Chao and Chen, Zhicun and Yang, Lixin and Lu, Cewu},
+    journal={arXiv preprint arXiv:2304.05690},
+    year={2023}
+}
 
-    @article{li2023hybrik,
-        title={HybrIK-X: Hybrid Analytical-Neural Inverse Kinematics for Whole-body Mesh Recovery},
-        author={Li, Jiefeng and Bian, Siyuan and Xu, Chao and Chen, Zhicun and Yang, Lixin and Lu, Cewu},
-        journal={arXiv preprint arXiv:2304.05690},
-        year={2023}
-    }
-    
-    @inproceedings{yuan2022glamr,
-        title={GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras},
-        author={Yuan, Ye and Iqbal, Umar and Molchanov, Pavlo and Kitani, Kris and Kautz, Jan},
-        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-        year={2022}
-    }
+@inproceedings{yuan2022glamr,
+    title={GLAMR: Global Occlusion-Aware Human Mesh Recovery with Dynamic Cameras},
+    author={Yuan, Ye and Iqbal, Umar and Molchanov, Pavlo and Kitani, Kris and Kautz, Jan},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2022}
+  }
+```
 
 
+# License
+Please see the [license](LICENSE) for further details.
 
 
