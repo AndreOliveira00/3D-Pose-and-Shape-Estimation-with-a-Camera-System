@@ -13,9 +13,7 @@ from utils import joints_name_29
 from tqdm import tqdm
 # from scipy.ndimage.filters import gaussian_filter1d
 
-# root_dir = "/home/andre/Documents/Projects/GLAMR/out/glamr_dynamic/Havoc_Ladies_1790_1922"
-# root_dir = "/home/andre/Documents/Projects/GLAMR/out/glamr_dynamic/courtyard_basketball_01_0_200_cut_images_516x1350"
-root_dir = "/home/andre/Documents/Projects/GLAMR/out/glamr_dynamic/downtown_runForBus_01_425_560"
+root_dir = "out/glamr_dynamic/downtown_runForBus"
 # pose_est_dir="out/glamr_static/basketball/pose_est"
 pose_est_dir = f"{root_dir}/pose_est_hybrik_hrnet48"
 grecon_dir = f"{root_dir}/grecon_from_hrnet48" 

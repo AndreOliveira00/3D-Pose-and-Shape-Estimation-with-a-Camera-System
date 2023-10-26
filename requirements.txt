@@ -2,6 +2,7 @@ smplx[all]
 autograd
 Cython
 easydict
+ffmpeg
 graphviz
 h5py
 lmdb

@@ -8,10 +8,6 @@ from tqdm import tqdm
 from lib.utils.vis import video_to_images
 from preprocess.images2video import images_to_video
 
-# video_file = "/home/andre/Downloads/videos/House Dance Choreo by MaMSoN.mp4"
-# image_folder = "/home/andre/Downloads/videos/House Dance Choreo by MaMSoN"
-# video_to_images(video_file, image_folder, fps=30)
-
 def verificar_mesma_largura(diretorio, largura_referencia, jump):
     lista_arquivos = os.listdir(diretorio)
     if len(lista_arquivos) == 0:
@@ -104,12 +100,12 @@ verificar_mesma_largura(diretorio_destino, largura, jump)
 # y = 0
 # largura = 1360 # must be divisible by 2
 # altura = 1010
-# diretorio_origem = "/home/andre/Documents/Projects/GLAMR/out/glamr_static/WalkingAround_Joe_1s/pose_est_hybrik_hrnet48/frames"
-# diretorio_destino = "/home/andre/Documents/Projects/GLAMR/assets/static/WalkingAround_Joe_0_10"
+# diretorio_origem = "out/glamr_static/WalkingAround_Joe_1s/pose_est_hybrik_hrnet48/frames"
+# diretorio_destino = "assets/static/WalkingAround_Joe_0_10"
 # cut_images(diretorio_origem,x,y,largura,altura,diretorio_destino)
 
 # frame_dir = diretorio_destino
-# vid_out_file =  "/home/andre/Documents/Projects/GLAMR/assets/static/WalkingAround_Joe_0_10.mp4"
+# vid_out_file =  "assets/static/WalkingAround_Joe_0_10.mp4"
 # init_frame = 1
 # images_to_video(frame_dir, vid_out_file, init_frame, fps=30, verbose=False)
 

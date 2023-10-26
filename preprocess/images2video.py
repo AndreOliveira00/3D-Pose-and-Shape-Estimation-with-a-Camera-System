@@ -52,13 +52,13 @@ def images_to_video(img_dir, out_path, init_frame, img_fmt="%06d.jpg", fps=30, c
     if p.returncode != 0:
         raise Exception('Something went wrong during images_to_video!')
 
-frame_dir = "/home/andre/Documents/Projects/GLAMR/out/glamr_static/bow/grecon_images/20230901-162333"
-vid_out_file =  "/home/andre/Documents/Projects/GLAMR/out/glamr_static/bow/grecon_videos_from_hrnet48/forpresentation.mp4"
-init_frame = 0
+# frame_dir = "/frame_directory_path"
+# vid_out_file =  "/video_directory_path"
+# init_frame = 0
 
-processar_imagens_no_diretorio(frame_dir)
+# processar_imagens_no_diretorio(frame_dir)
 
-images_to_video(frame_dir, vid_out_file, init_frame, fps=30, verbose=False)
-print("We are done!")
+# images_to_video(frame_dir, vid_out_file, init_frame, fps=30, verbose=False)
+# print("We are done!")
 
 

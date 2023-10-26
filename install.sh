@@ -22,3 +22,6 @@ sudo pip install -v -e .
 sudo pip install boxmot
 
 cd ../..
+
+# copy code to specific folder
+cp ./pose_est/hybrik_demo/demo_hrnet48.py ./HybrIK_X/scripts
